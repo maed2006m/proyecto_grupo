@@ -1,16 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Proyecto Grupo</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto Grupo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9fafb;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #2563eb;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+
+        .simulation {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #eef2ff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .simulation h3 {
+            margin-top: 0;
+            color: #3730a3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Integrantes del equipo</h1>
-<ul>
-    <li>Alejandro Mendez Ducuara</li>
-    <li>Miguel Escobar</li>
-    <li>Juan Andres</li>
-    <li>Simulacion Merge contra rebase</li>
-</ul>
+
+    <header>
+        <h1>Proyecto Grupo</h1>
+        <p>Laboratorio de colaboración con Git y GitHub</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>Integrantes del equipo</h2>
+
+            <ul>
+                <li>Alejandro Mendez Ducuara</li>
+                <li>Miguel Escobar</li>
+                <li>Juan Andres</li>
+            </ul>
+
+            <div class="simulation">
+                <h3>Simulación Merge contra Rebase</h3>
+                <p>
+                    En este proyecto se realiza una simulación práctica
+                    para comprender las diferencias entre Merge y Rebase
+                    dentro de un flujo de trabajo colaborativo con Git.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto Grupo — Git y GitHub</p>
+    </footer>
+
 </body>
+
 </html>
