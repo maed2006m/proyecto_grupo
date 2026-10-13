@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    default: dev
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/inventario_tienda}
+    username: ${DB_USER:inventario}
+    password: ${DB_PASSWORD:inventario}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  flyway:
+    locations: classpath:db/migration
+app:
+  jwt:
+    secret: ${JWT_SECRET:cambiar-este-secreto-en-produccion-minimo-32-caracteres}
+    expiracion-minutos: 120
